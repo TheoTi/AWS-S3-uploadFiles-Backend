@@ -10,7 +10,7 @@ class PostController {
       name,
       size,
       key,
-      url: '',
+      url: "",
     });
 
     res.json(post);
