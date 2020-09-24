@@ -45,7 +45,7 @@ $ docker run --name mongodb -p 17017:27017 -d mongo
 # mongo -> indicates the image used as the basis for generating the container
 
 # Start MongoDB container
-$ docker start mongodb(name used in creating the container)
+$ docker start mongodb #(name used in creating the container)
 
 # Start server
 $ yarn dev
