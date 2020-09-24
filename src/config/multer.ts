@@ -1,11 +1,11 @@
-import multer, { FileFilterCallback, Options } from 'multer';
-import { resolve } from 'path';
-import crypto from 'crypto';
+import multer, { FileFilterCallback, Options } from "multer";
+import { resolve } from "path";
+import crypto from "crypto";
 
 export default<Options> {
   storage: multer.diskStorage({
     destination: (req, file, cb) => {
-      cb(null, resolve(__dirname, '..', '..', 'tmp', 'uploads'))
+      cb(null, resolve(__dirname, "..", "..", "tmp", "uploads"))
     },
     filename: (req: any, file: any, cb) => {
       crypto.randomBytes(16, (err: Error, hash) => {
@@ -13,7 +13,7 @@ export default<Options> {
           cb(null, String(err))
         }
         
-        const fileName: string = `${hash.toString('hex')}-${file.originalname}`;
+        const fileName: string = `${hash.toString("hex")}-${file.originalname}`;
 
         cb(null, fileName);
       });

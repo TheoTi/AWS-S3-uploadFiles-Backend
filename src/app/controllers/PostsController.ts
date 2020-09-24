@@ -1,6 +1,6 @@
-import { Request, Response } from 'express';
+import { Request, Response } from "express";
 
-import Post from '../models/Post';
+import Post from "../models/Post";
 
 class PostController {
   async create(req: Request, res: Response) {
