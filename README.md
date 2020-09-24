@@ -33,6 +33,20 @@ $ cd uploadFiles-Backend
 # Install dependencies
 $ yarn install
 
+# Download Mongo image docker
+$ docker pull mongo
+
+# Create MongoDB serve
+$ docker run --name mongodb -p 17017:27017 -d mongo
+
+# --name -> specifies the name of the container (mongodb)
+# -p -> configure the port where the communication with MongoDB will take place(default 27017)
+# -d -> runs the container as a background service
+# mongo -> indicates the image used as the basis for generating the container
+
+# Start MongoDB container
+$ docker start mongodb(name used in creating the container)
+
 # Start server
 $ yarn dev
 
