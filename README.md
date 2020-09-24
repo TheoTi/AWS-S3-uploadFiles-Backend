@@ -1,6 +1,7 @@
 # Upload Files [BACKEND]
 <p align="center">
-<a href="https://insomnia.rest/run/?label=uploadFiles&uri=http%3A%2F%2Flocalhost%3A3333%2Fuploads" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+  <a href="https://www.codacy.com/manual/TheoTi/uploadFiles-Backend/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TheoTi/uploadFiles-Backend&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/cf707929eb5341d09cf1b136ee72e698"/></a>
+  <a href="https://insomnia.rest/run/?label=uploadFiles&uri=http%3A%2F%2Flocalhost%3A3333%2Fuploads" target="_blank"><img         src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 </P>
 
 ## 💻 Project
