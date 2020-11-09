@@ -2,6 +2,7 @@ import "dotenv/config";
 import express from "express";
 import mongoose from "mongoose";
 import morgan from "morgan";
+import { resolve } from 'path';
 
 import { router } from "./routes";
 
@@ -22,5 +23,6 @@ mongoose.connect(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@uploadfile.rnxo6.mongo
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(router);
+app.use('/files', express.static(resolve(__dirname, "..", "tmp", "uploads")));
 
 export { app };

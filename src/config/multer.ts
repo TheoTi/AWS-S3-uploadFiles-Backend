@@ -42,7 +42,7 @@ const storageTypes = {
 }
 
 export default<Options> {
-  storage: storageTypes['s3'],
+  storage: storageTypes[process.env.STORAGE_TYPE],
   limits: {
     filseSize: Number(2 * 1024 * 1024),
   },
